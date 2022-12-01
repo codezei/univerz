@@ -1,0 +1,119 @@
+.promo {
+    
+    
+    &__inner {
+        max-width: 550px;
+    }
+    &__title {
+        margin-bottom: 16px;
+        span {
+            color: #29ACD5;
+        }
+    }
+    &__description {
+        opacity: 0.8;
+        margin-bottom: 32px;
+        font-size: 24px;
+    }
+    .container {
+        padding-top: 224px;
+        padding-bottom: 132px;
+        position: relative;
+        overflow: hidden;
+        &:before {
+            content: "";
+            display: block;
+            width: 1315px;
+            height: 680px;
+            background-image: url(../images/dist/promo-bg.png);
+            background-size: contain;
+            background-position: left center;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        &:after {
+            content: "";
+            display: block;
+            width: 300px;
+            height: 680px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1;
+            background: rgb(0,17,33);
+            background: linear-gradient(90deg, rgba(0,17,33,0) 0%, rgba(0,17,33,1) 90%, rgba(0,17,33,1) 100%);
+        }
+    }
+
+
+
+    @media screen and (max-width: 1199px) {
+        .container {
+            padding-top: 200px;
+            padding-bottom: 100px;
+        }
+      }
+      @media screen and (max-width: 991px) {
+        .container {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            &:before {
+                width: 100%;
+                height: 100%;
+                background-image: url(../images/dist/promo-bg-tablet.png);
+            }
+        }
+        &__description {
+            font-size: 22px;
+        }
+      }
+      @media screen and (max-width: 767px) {
+        .container {
+            padding-top: 75px;
+            padding-bottom: 75px;
+        }
+        &__description {
+            font-size: 20px;
+        }
+      }
+      @media screen and (max-width: 575px) {
+        .container {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            &:before {
+                background-image: url(../images/dist/promo-bg-mob.png);
+            }
+        }
+        &__description {
+            font-size: 18px;
+        }
+        &__inner {
+            text-align: center;
+        }
+      }
+      @media screen and (max-width: 479px) {
+        .container {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+      }
+
+}
+
+.social {
+    &__link {
+        text-decoration: none;
+        color: #29ACD5 !important;
+        transition: all 400ms;
+        opacity: 0.5;
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+        &:hover {
+            color: #fff !important;
+        }
+    }
+}

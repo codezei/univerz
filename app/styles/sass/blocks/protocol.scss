@@ -1,0 +1,44 @@
+.protocol {
+    
+    padding: 150px 0 110px;
+    &__inner {
+        border: 1px solid #23263C;
+        border-radius: 24px;
+        padding: 64px;
+        background-image: url(../images/dist/protocol-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        text-align: center
+    }
+    &__title {
+        @media screen and (min-width: 1200px) {
+            font-size: 40px;
+            line-height: 1.25;
+        }
+    }
+    &__text {
+        color: rgba($color: #ffffff, $alpha: 0.6);
+        margin-bottom: 32px;
+        max-width: 680px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (max-width: 991px) {
+        padding: 100px 0;
+        &__inner {
+            padding: 32px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        padding: 75px 0;
+    }
+    @media screen and (max-width: 575px) {
+        padding: 50px 0;
+    }
+    @media screen and (max-width: 479px) {
+        padding: 30px 0;
+        &__inner {
+            padding: 16px;
+        }
+    }
+}

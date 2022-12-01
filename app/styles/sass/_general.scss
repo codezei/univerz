@@ -1,0 +1,160 @@
+/* poppins-regular - latin-ext */
+@font-face {
+    font-family: 'Poppins';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/poppins-v20-latin-ext-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/poppins-v20-latin-ext-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+
+  @font-face {
+    font-family: 'ClashDisplay';
+    src: url('../fonts/ClashDisplay-Medium.woff2') format('woff2'),
+         url('../fonts/ClashDisplay-Medium.woff') format('woff');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'ClashDisplay';
+    src: url('../fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+         url('../fonts/ClashDisplay-Semibold.woff') format('woff');
+         font-weight: 600;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+
+  .menu-container {
+    font-size: 16px;
+    a {
+        color: inherit;
+        text-decoration: none;
+        transition: all 400ms;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'ClashDisplay';
+    font-weight: 500;
+}
+
+
+.btn {
+    background: #29ACD5;
+    border-radius: 12px;
+    padding: 18px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'ClashDisplay';
+    line-height: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 400ms;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 400ms;
+    border: 1px solid #29ACD5;
+}
+.btn:hover {
+  background: transparent;
+  color: #29ACD5;
+}
+
+.btn-inversion {
+  background: transparent;
+  border-radius: 12px;
+  padding: 18px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'ClashDisplay';
+  line-height: 20px;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 400ms;
+  color: #29ACD5;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 400ms;
+  border: 1px solid #29ACD5;
+}
+.btn-inversion:hover {
+  background: #29ACD5;
+  color: #fff;
+}
+body {
+  @media screen and (max-width: 991px) {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  @media screen and (max-width: 575px) {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+}
+.title {
+  font-size: 48px;
+  line-height: 1.16;
+  margin-bottom: 32px;
+  @media screen and (max-width: 1199px) {
+    font-size: 44px;
+  }
+  @media screen and (max-width: 991px) {
+    font-size: 40px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 36px;
+  }
+  @media screen and (max-width: 575px) {
+    font-size: 32px;
+  }
+  @media screen and (max-width: 479px) {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+}
+.main-title {
+  font-size: 64px;
+  line-height: 1.125;
+  @media screen and (max-width: 1199px) {
+    font-size: 60px;
+  }
+  @media screen and (max-width: 991px) {
+    font-size: 55px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 50px;
+  }
+  @media screen and (max-width: 575px) {
+    font-size: 45px;
+  }
+  @media screen and (max-width: 479px) {
+    font-size: 40px;
+  }
+}
+
+.small-title {
+  color: #29ACD5;
+  font-size: 14px;
+  line-height: 1.43;
+  margin-bottom: 32px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  @media screen and (max-width: 479px) {
+    margin-bottom: 20px;
+  }
+}
+
